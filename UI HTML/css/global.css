@@ -94,7 +94,6 @@ iframe {
 
 body {
   margin: 0;
-  overflow-x: hidden;
   font-family: "Gotham" !important;
   font-weight: 400;
   font-size: 0.75rem;
@@ -103,18 +102,342 @@ body {
 }
 
 html, body {
-  overflow-x: hidden;
   line-height: normal;
 }
 
 b {
   font-family: "Gotham" !important;
   font-weight: 500;
-  font-size: 0.75rem;
-  line-height: 0.75rem;
 }
 
 dl, ol, ul {
   margin: 0;
   padding: 0;
+}
+
+h1, .heading_1 {
+  font-family: "Gotham" !important;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  font-size: 1.25rem;
+  color: #111111;
+}
+
+h2, .heading_2 {
+  font-family: "Gotham" !important;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  font-size: 1.125rem;
+  color: #282627;
+}
+
+h3, .heading_3 {
+  font-family: "Gotham" !important;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  font-size: 1rem;
+  color: #333333;
+}
+
+h4, .heading_4a {
+  font-family: "Gotham" !important;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  font-size: 0.875rem;
+  color: #7f7f7f;
+}
+
+h5, .heading_4b {
+  font-family: "Gotham" !important;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  font-weight: 300;
+  font-size: 0.75rem;
+  color: #7f7f7f;
+}
+
+.notification-bar {
+  background-color: #BB0100;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.notification-bar .notification-body h1, .notification-bar .notification-body .heading_1, .notification-bar .notification-body h2, .notification-bar .notification-body .heading_2, .notification-bar .notification-body h3, .notification-bar .notification-body .heading_3, .notification-bar .notification-body h4, .notification-bar .notification-body .heading_4a, .notification-bar .notification-body h5, .notification-bar .notification-body .heading_4b {
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+nav .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.nav-list .nav-item .nav-link {
+  font-family: "Gotham" !important;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  font-size: 0.875rem;
+  color: #282627;
+  font-weight: 300;
+  display: inline-block;
+}
+
+.navbar .nav-list {
+  gap: 2rem;
+}
+
+.nav-right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: calc(1rem - 1px);
+}
+.nav-right .nav-list {
+  gap: calc(1rem - 1px);
+}
+
+.nav-center {
+  position: absolute;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  z-index: auto;
+}
+
+@media (max-width: 1180px) {
+  nav .container .nav-center {
+    position: relative;
+    margin-left: unset;
+    transform: unset;
+  }
+}
+.form-group .form-control {
+  height: 3rem;
+  border-radius: 4px;
+  border: 1px solid #bfbfbf;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.form-group .form-control:focus, .form-group .form-control:active {
+  outline: unset !important;
+}
+.form-group .form-control::-moz-placeholder {
+  font-family: "Gotham" !important;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  color: #bfbfbf;
+}
+.form-group .form-control::placeholder {
+  font-family: "Gotham" !important;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  color: #bfbfbf;
+}
+
+.search-form {
+  width: 10rem;
+  height: 2.25rem;
+}
+.search-form .form-group {
+  position: relative;
+}
+.search-form .form-control {
+  width: 100%;
+  height: 100%;
+  padding: 0.375rem 2.3rem 0.375rem 0.563rem;
+  font-size: 0.875rem;
+  height: 2.25rem;
+  font-family: "Gotham" !important;
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  color: #282627;
+  background-color: #ededed;
+  border: unset;
+}
+.search-form .form-control::-moz-placeholder {
+  font-family: "Gotham" !important;
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  color: #282627;
+}
+.search-form .form-control::placeholder {
+  font-family: "Gotham" !important;
+  font-weight: 300;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  color: #282627;
+}
+.search-form .btn-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  z-index: 5;
+  right: 0.438rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  border-radius: unset;
+  cursor: pointer;
+}
+.search-form .btn-icon svg {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.subscribe-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: stretch;
+  background-color: #fff;
+  height: 3rem;
+  border: 0.125rem solid #fff;
+  border-radius: 0.1875rem;
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+}
+.subscribe-form .icon {
+  margin-left: 0.75rem;
+  margin-right: 0.5rem;
+}
+.subscribe-form .input-control {
+  flex: 1;
+  height: 100%;
+  background-color: transparent;
+  border: unset;
+  border-radius: unset;
+  font-family: "Gotham" !important;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 0.75rem;
+  font-size: 0.875rem;
+}
+.subscribe-form .input-control::-moz-placeholder {
+  color: #BB0100;
+}
+.subscribe-form .input-control::placeholder {
+  color: #BB0100;
+}
+.subscribe-form .input-control:focus, .subscribe-form .input-control:active {
+  outline: unset !important;
+}
+.subscribe-form .btn-subscribe {
+  height: 100%;
+  border-radius: 0px;
+  border: unset;
+  font-size: 0.875rem;
+  background-color: #BB0100;
+  color: #fff;
+  padding: 0.75rem;
+  cursor: pointer;
+}
+
+.neo-brand-logo {
+  font-family: "Gotham" !important;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+.footer-section {
+  background-color: #111111;
+  color: #fff;
+}
+.footer-section .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer-section .footer-aboutus {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+}
+.footer-section .footer-aboutus .neo-brand-logo {
+  margin-bottom: 2.0625rem;
+}
+.footer-section .footer-aboutus p {
+  font-family: "Gotham" !important;
+  font-weight: 300;
+  color: #fff;
+  font-weight: 100;
+  font-size: 0.875rem;
+  margin-bottom: 0.5625rem;
+  letter-spacing: 0.0625rem;
+}
+.footer-section .footer-aboutus .mb-2 {
+  margin-bottom: 1.25rem;
+}
+.footer-section .footer-aboutus .socialmedia-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+}
+.footer-section .right-secreen {
+  padding-top: 3.125rem;
+  padding-bottom: 3.125rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.875rem;
+}
+.footer-section .right-secreen .footer-list h3 {
+  color: #fff;
+  font-size: 0.9375rem;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0.0625rem;
+}
+.footer-section .right-secreen .footer-list .nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-section .right-secreen .footer-list .nav-list .nav-link {
+  color: #fff;
+  font-weight: 100;
+  letter-spacing: 0.0625rem;
+}
+
+.container, .body-container {
+  max-width: 1240px;
+  margin-left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+}
+@media (max-width: 1239px) {
+  .container, .body-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 }/*# sourceMappingURL=global.css.map */

@@ -1,5 +1,17 @@
 
 @import 'base';
 
-// language Setup
+// Basic Setup
+
+
+.container,.body-container{
+    max-width: 1240px;
+    margin-left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    @media (max-width:1239px) {
+        @include paddingX(1rem);
+    }
+}
+
 

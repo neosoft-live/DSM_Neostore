@@ -52,17 +52,15 @@ iframe {
 
 body {
     margin: 0;
-    overflow-x: hidden;
     @include font_regular;
     background: #fff;
 }
 
 html, body {
-    overflow-x: hidden;
     line-height: normal;
 }
 b{
-    @include font_medium;
+    @include gotham_medium;
 }
 
 dl, ol, ul {
@@ -71,5 +69,31 @@ dl, ol, ul {
 } 
 
 
+h1,.heading_1{
+    @include font_medium();
+    font-size: $h1_size;
+    color: $black_900_color;
+}
+h2,.heading_2{
+    @include font_medium();
+    font-size: $h2_size;
+    color: $black_800_color;
+}
+h3,.heading_3{
+    @include font_medium();
+    font-size: $h3_size;
+    color: $black_700_color;
+}
+h4,.heading_4a{
+    @include font_medium();
+    font-size: $h4_size;
+    color: $black_500_color;
+}
+h5,.heading_4b{
+    @include font_medium();
+    font-weight: 300;
+    font-size: $h5_size;
+    color: $black_500_color;
+}
 
 

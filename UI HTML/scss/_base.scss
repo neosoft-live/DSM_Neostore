@@ -2,15 +2,15 @@
 
 // import all the files
 
-@import 'abstracts/variables';
 @import 'abstracts/mixins';
+@import 'abstracts/variables';
 @import 'base/typography';
 @import 'base/reset';
 
 
-// @import 'components/alert';
-// @import 'components/button';
-// @import 'components/breadcrums';
+ @import 'components/notificationbar';
+ @import 'components/navbar';
+ @import 'components/form';
 // @import 'components/stepprogress';
 // @import 'components/tablelist';
 // @import 'components/language_area'; 
@@ -27,7 +27,7 @@
 // @import 'components/popup';
 // @import 'components/keyboard';
 // @import 'components/video_popup';
-// @import 'components/sidepopup';
+ @import 'components/brandlogo';
 
 
 
@@ -37,5 +37,5 @@
 
 
 // @import 'layout/header';
-// @import 'layout/footer';
+ @import 'layout/footer';
 

@@ -54,6 +54,11 @@
 
 
 
+@function pxtorem($px){
+    @return ($px / 16) + rem;
+}
+
+
 
 @mixin padding($space) {
     padding: $space;
