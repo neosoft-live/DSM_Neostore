@@ -2,9 +2,19 @@
 
 
 .form-group{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+    margin-bottom: pxtorem(5);
+    label{
+        @include gotham_medium;
+        @include font-size(pxtorem(14));
+        color: $black_600_color;
+    }
     .form-control{
         height: 3rem;
-        border-radius: 4px;
+        border-radius: pxtorem(6);
         border: 1px solid $black_400_color;
         @include paddingX(1rem);
         @include paddingY(1rem);
@@ -12,13 +22,73 @@
             outline: unset !important;
         }
         &::placeholder{
-            @include font_medium();
+            @include font_regular();
             @include font-size($h4_size);
-            color: $black_400_color;
+            color: #706a6a;
+        }
+
+        &[type='checkbox'],&[type='radio']{
+            position: absolute;
+            z-index: -1;
+            width: 0px;
+            height: 0px;
+            opacity: 0;
         }
     }
 }
 
+
+.radio-control{
+    margin-top: 1rem;
+    label{
+        @include font_regular;
+        @include font-size(pxtorem(14));
+        color: #706A6A;
+        position: relative;
+        padding-left: pxtorem(30) ;
+        cursor: pointer;
+
+        &:before{
+            content: " ";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: pxtorem(22);
+            height: pxtorem(22);
+            border: 1px solid $black_400_color;
+            
+            border-radius: pxtorem(3);
+        }
+
+        &::after{
+            content: " ";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%) rotate(312deg);
+            width: pxtorem(15);
+            height: pxtorem(8);
+            margin-left: pxtorem(3);
+            margin-top: pxtorem(-2);
+            border-left: pxtorem(3) solid $white_color;
+            border-bottom: pxtorem(3) solid $white_color;
+            display: none;
+        }
+    }
+
+    [type='checkbox'], [type='radio']{
+        &:checked + label{
+            &::before{
+                background-color: $red_medium_color;
+                border-color: $red_medium_color;
+            }
+            &::after{
+                display: block;
+            }
+        }
+    }
+}
 .search-form{
     width: 10rem;
     height: 2.25rem;

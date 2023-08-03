@@ -43,6 +43,9 @@
         display: flex;
         flex-wrap: wrap;
         gap: pxtorem(46);
+        @media (max-width:1200px) {
+            gap:pxtorem(20);
+        }
         .footer-list{
             h3{
                 color: $white_color;
