@@ -595,6 +595,7 @@ nav .container {
   font-size: 0.9375rem;
   margin-bottom: 2.5rem;
   letter-spacing: 0.0625rem;
+  text-transform: uppercase;
 }
 .footer-section .right-secreen .footer-list .nav-list {
   display: flex;
